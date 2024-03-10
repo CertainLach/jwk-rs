@@ -7,8 +7,6 @@ use super::*;
 
 use std::str::FromStr;
 
-use crate::byte_array::ByteArray;
-
 // Generated using https://mkjwk.org
 static P256_JWK_FIXTURE: &str = r#"{
         "kty": "EC",

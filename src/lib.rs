@@ -11,7 +11,7 @@
 //! ### Deserializing from JSON
 //!
 //! ```
-//! extern crate jsonwebkey as jwk;
+//! extern crate pykrete_jsonwebkey as jwk;
 //! // Generated using https://mkjwk.org/.
 //! let jwt_str = r#"{
 //!    "kty": "oct",
@@ -29,7 +29,7 @@
 //! ```
 //! #[cfg(all(feature = "generate", feature = "jwt-convert"))] {
 //! extern crate jsonwebtoken as jwt;
-//! extern crate jsonwebkey as jwk;
+//! extern crate pykrete_jsonwebkey as jwk;
 //!
 //! #[derive(serde::Serialize, serde::Deserialize)]
 //! struct TokenClaims {
