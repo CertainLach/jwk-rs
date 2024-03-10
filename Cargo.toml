@@ -1,6 +1,6 @@
 [package]
 name = "pykrete-jsonwebkey"
-version = "0.4.0"
+version = "0.4.1"
 authors = ["Nick Hynes <nhynes@nhynes.com>", "Yaroslav Bolyukin <iam@lach.pw>"]
 description = "JSON Web Key (JWK) (de)serialization, generation, and conversion."
 readme = "README.md"
@@ -12,7 +12,7 @@ edition = "2021"
 [dependencies]
 base64        = "0.22"
 bitflags      = "2.4"
-generic-array = "1.0"
+generic-array = "0.14.7"
 jsonwebtoken  = { version = "9.2",  optional = true }
 num-bigint    = { version = "0.4",  optional = true }
 p256          = { version = "0.13", optional = true, features = ["arithmetic"] }

@@ -409,7 +409,7 @@ impl Key {
                     Some(private_point) => {
                         pkcs8::write_private(oids, |writer: &mut DERWriterSeq<'_>| {
                             writer.next().write_i8(1); // version
-                            writer.next().write_bytes(&**private_point);
+                            writer.next().write_bytes(private_point);
                             writer.next().write_tagged(Tag::context(1), write_public);
                         })
                     }
